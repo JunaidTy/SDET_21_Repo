@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <listeners>
+<listener class-name="com.crm.autodesk.GenericLib.Listners"></listener>
+</listeners>
+  <test thread-count="2" parallel="tests" name="TestRunner_1">
+    <classes>
+      <class name="com.crm.autodesk.LeadTest.TC_11_CreateLeadTest"/>
+     </classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="2" parallel="tests" name="TestRunner_2">
+    <classes>
+     <class name="com.crm.autodesk.LeadTest.TC_12_CreateLeadTest"/>
+     </classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="2" parallel="tests" name="TestRunner_3">
+    <classes>
+      <class name="com.crm.autodesk.LeadTest.TC_13_CreateLeadTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

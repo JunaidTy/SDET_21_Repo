@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.crm.autodesk.LeadTest.TC_14_CreateLeadTest">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="logoutOfApp"/>
+          <include name="closeBrowser"/>
+          <include name="connectDB"/>
+          <include name="CreateLeadTest"/>
+          <include name="closeDB"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.LeadTest.TC_14_CreateLeadTest -->
+      <class name="com.crm.autodesk.LeadTest.TC_13_CreateLeadTest">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="CreateLeadTest"/>
+          <include name="logoutOfApp"/>
+          <include name="closeBrowser"/>
+          <include name="connectDB"/>
+          <include name="closeDB"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.LeadTest.TC_13_CreateLeadTest -->
+      <class name="com.crm.autodesk.LeadTest.TC_15_CreateLeadTest">
+        <methods>
+          <include name="CreateLeadTest"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="logoutOfApp"/>
+          <include name="closeBrowser"/>
+          <include name="connectDB"/>
+          <include name="closeDB"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.LeadTest.TC_15_CreateLeadTest -->
+      <class name="practice.CreateContactTest">
+        <methods>
+          <include name="contactTest"/>
+        </methods>
+      </class> <!-- practice.CreateContactTest -->
+      <class name="com.crm.autodesk.LeadTest.TC_15_01_CreateLeadTest">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="CreateLeadTest"/>
+          <include name="logoutOfApp"/>
+          <include name="closeBrowser"/>
+          <include name="connectDB"/>
+          <include name="closeDB"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.LeadTest.TC_15_01_CreateLeadTest -->
+      <class name="com.crm.autodesk.LeadTest.TC_11_CreateLeadTest">
+        <methods>
+          <include name="CreateLeadTest"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="logoutOfApp"/>
+          <include name="closeBrowser"/>
+          <include name="connectDB"/>
+          <include name="closeDB"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.LeadTest.TC_11_CreateLeadTest -->
+      <class name="com.crm.autodesk.ContactsTest.TC_01_CreateWithOrganizationTest">
+        <methods>
+          <include name="createcontactwithOrganization"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.ContactsTest.TC_01_CreateWithOrganizationTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
