@@ -1,9 +1,0 @@
-#surefire_0
-#Tue Sep 21 17:18:26 IST 2021
-url=http\://localhost\:8888
-password=admin
-browserName=firefox
-username=admin
-basedir=C\:\\Users\\JAnsari\\eclipse-workspace\\SeleniumProject_Maven
-user.dir=C\:\\Users\\JAnsari\\eclipse-workspace\\SeleniumProject_Maven
-localRepository=C\:\\Users\\JAnsari\\.m2\\repository
