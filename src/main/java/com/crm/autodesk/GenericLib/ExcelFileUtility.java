@@ -66,7 +66,7 @@ public class ExcelFileUtility {
 		
 		return value;
 	}
-	public Object[][] getExcelData(String SheetName) throws Throwable, IOException 
+	public Object[][] getExcelData1(String SheetName) throws Throwable, IOException 
 	{
 		//create the object of fileinputstream and pass the path
 		FileInputStream fis=new FileInputStream(IpathConstants.ExcelDataProvider);
