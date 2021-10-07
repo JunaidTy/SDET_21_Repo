@@ -35,7 +35,7 @@ public class ExcelFileUtility {
 		DataFormatter format = new DataFormatter();
 		Row row = sheet.getRow(rowNum);
 		Cell cell = row.getCell(cellNum);
-	      //cell.getStringCellValue()
+	     // String d = cell.getStringCellValue();
 		String value = format.formatCellValue(cell);
 		
 		return value;
@@ -49,6 +49,7 @@ public class ExcelFileUtility {
 		DataFormatter format = new DataFormatter();
 		Row row = sheet.getRow(rowNum);
 		Cell cell = row.getCell(cellNum);
+		
 		String value = format.formatCellValue(cell);
 		
 		return value;

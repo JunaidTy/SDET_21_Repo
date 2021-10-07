@@ -237,6 +237,12 @@ public class CreateLeadsPage extends WebDriverUtility{
 		saveBtn.click();
 		
 	}
+
+	public void createLeadWithAllDetails(Object[][] companyName, Object[][] industryType) {
+			
+		//companyEdt.sendKeys(companyName);
+	}
+	
 	
 	
 	

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test1(failed)">
+  <listeners>
+    <listener class-name="com.crm.autodesk.GenericLib.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.crm.autodesk.LeadTest.TC_13_CreateLeadTest">
+      <class name="com.crm.autodesk.LeadTest.TC_11_CreateLeadTest">
         <methods>
+          <include name="CreateLeadTest"/>
           <include name="loginToApp"/>
           <include name="launchBrowser"/>
-          <include name="CreateLeadTest"/>
           <include name="logoutOfApp"/>
           <include name="closeBrowser"/>
           <include name="connectDB"/>
           <include name="closeDB"/>
         </methods>
-      </class> <!-- com.crm.autodesk.LeadTest.TC_13_CreateLeadTest -->
+      </class> <!-- com.crm.autodesk.LeadTest.TC_11_CreateLeadTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

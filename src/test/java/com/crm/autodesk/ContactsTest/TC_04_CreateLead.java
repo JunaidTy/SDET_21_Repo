@@ -14,7 +14,7 @@ public class TC_04_CreateLead extends BaseClass
 	@DataProvider
 	public Object[][] getData() throws Throwable, Throwable
 	{
-		return eLib.getExcelData("Sheet1");
+		return eLib.getExcelData1("Sheet1");
 	}
 	@Test(dataProvider = "Sheet1")
 	public void createLead (String Industry,String Company ) 
@@ -27,6 +27,8 @@ public class TC_04_CreateLead extends BaseClass
 			//Navigate to Create Leads page
 			LeadsPage lp=new LeadsPage(driver);
 			lp.clickOnCreateLeadImg();
+			System.out.println(Industry);
+			System.out.println(Company);
 			
 		}
 

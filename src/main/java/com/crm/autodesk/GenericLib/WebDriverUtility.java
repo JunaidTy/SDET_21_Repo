@@ -56,6 +56,7 @@ public class WebDriverUtility {
 	   {
 		   Select sel=new Select(element);
 		   sel.selectByIndex(index);
+		   
 	   }
 	   public void select(WebElement element,String text)
 	   {
@@ -79,6 +80,7 @@ public class WebDriverUtility {
 	{
 		Actions act=new Actions(driver);
 		act.moveToElement(element).perform();
+	
 	}
 	/**
 	 * this method is use to double click on the element

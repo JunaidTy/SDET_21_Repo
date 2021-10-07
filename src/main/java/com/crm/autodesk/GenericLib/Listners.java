@@ -12,12 +12,12 @@ public class Listners implements ITestListener
 {
 	ExtentReports reports; //attach the reporter
 	ExtentTest test; //to make entries of test cases and logs
-	
+	@Override
 	public void onTestStart(ITestResult result) 
 	{
 		test=reports.createTest(result.getMethod().getMethodName());
 	}
-	
+	@Override
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS,result.getMethod().getMethodName()+" is Passed");
 
@@ -30,7 +30,7 @@ public class Listners implements ITestListener
 			e.printStackTrace();
 		}
 	}
-	
+	@Override
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL,result.getMethod().getMethodName()+" is Failed");
 		test.log(Status.FAIL,result.getThrowable());
@@ -39,22 +39,21 @@ public class Listners implements ITestListener
 		String path=Baseclass.screenShot("result.getMethod().getMethodName()");
 		test.addScreenCaptureFromPath(path);
 		} catch (Throwable e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 	}
-	
+	@Override
 	public void onTestSkipped(ITestResult result) {
 		test.log(Status.SKIP,result.getMethod().getMethodName()+" is Skipped");
 		
 	}
-	
+	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
-	
+	@Override
 	public void onStart(ITestContext context) {
 		JavaUtility ju=new JavaUtility();
 		ExtentHtmlReporter reporter=new ExtentHtmlReporter(IpathConstants.extentRepoPath+"reports"+ju.getSystmeDate()+".html");//path of report
@@ -66,7 +65,7 @@ public class Listners implements ITestListener
 		reports.setSystemInfo("Build","5.1");
 		reports.setSystemInfo("Reporter name","Juniad");
 	}
-	
+	@Override
 	public void onFinish(ITestContext context) {
 		reports.flush();
 	}
