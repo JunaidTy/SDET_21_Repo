@@ -28,7 +28,7 @@ public class WebDriverUtility {
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	/**
-	 * this method is use to maximize the window
+	 *   this method is use to maximize the window
 	 * @param driver
 	 */
 	public void maximizeWindow(WebDriver driver)
@@ -165,3 +165,4 @@ public class WebDriverUtility {
 	
 	
 }
+

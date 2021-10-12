@@ -3,6 +3,7 @@ package com.crm.autodesk.LeadTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.crm.autodesk.GenericLib.BaseClass;
 import com.crm.autodesk.elementRepository.CreateLeadInfo;
@@ -58,6 +59,7 @@ public class TC_11_CreateLeadTest extends BaseClass {
 		//verification
 		CreateLeadInfo cli =new CreateLeadInfo(driver);
 		String actualLeadInfo =cli.getLeadNumAct();
+		
 		Assert.assertTrue(actualLeadInfo.contains("LEA"));
 		System.out.println("Leads created and verified");
 		System.out.println(actualLeadInfo);
